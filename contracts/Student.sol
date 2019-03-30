@@ -14,4 +14,7 @@ contract Student {
         projectCount++;
         projects[projectCount] = Project(projectCount,_project,false) ;
     }
+    function validateProject(uint _id) public{
+        projects[_id].done = true;
+    }
 }
