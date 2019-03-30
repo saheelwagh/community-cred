@@ -5,4 +5,8 @@ contract Student{
 }
 contract Mentor {
     string name;
+    Student Tanmay;
+    function validate() public {
+        Tanmay.validateProject(0);
+    }
 }
